@@ -1,0 +1,1547 @@
+#jjEmail {
+  /* Allow for input prepend/append in search forms */
+
+}
+#jjEmail article,
+#jjEmail aside,
+#jjEmail details,
+#jjEmail figcaption,
+#jjEmail figure,
+#jjEmail footer,
+#jjEmail header,
+#jjEmail hgroup,
+#jjEmail nav,
+#jjEmail section {
+  display: block;
+}
+#jjEmail audio,
+#jjEmail canvas,
+#jjEmail video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#jjEmail audio:not([controls]) {
+  display: none;
+}
+#jjEmail html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+#jjEmail a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#jjEmail a:hover,
+#jjEmail a:active {
+  outline: 0;
+}
+#jjEmail sub,
+#jjEmail sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+#jjEmail sup {
+  top: -0.5em;
+}
+#jjEmail sub {
+  bottom: -0.25em;
+}
+#jjEmail img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#jjEmail #map_canvas img,
+#jjEmail .google-maps img {
+  max-width: none;
+}
+#jjEmail button,
+#jjEmail input,
+#jjEmail select,
+#jjEmail textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+#jjEmail button,
+#jjEmail input {
+  *overflow: visible;
+  line-height: normal;
+}
+#jjEmail button::-moz-focus-inner,
+#jjEmail input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+#jjEmail button,
+#jjEmail html input[type="button"],
+#jjEmail input[type="reset"],
+#jjEmail input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+#jjEmail label,
+#jjEmail select,
+#jjEmail button,
+#jjEmail input[type="button"],
+#jjEmail input[type="reset"],
+#jjEmail input[type="submit"],
+#jjEmail input[type="radio"],
+#jjEmail input[type="checkbox"] {
+  cursor: pointer;
+}
+#jjEmail input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+#jjEmail input[type="search"]::-webkit-search-decoration,
+#jjEmail input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#jjEmail textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+@media print {
+  #jjEmail * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  #jjEmail a,
+  #jjEmail a:visited {
+    text-decoration: underline;
+  }
+  #jjEmail a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  #jjEmail abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  #jjEmail .ir a:after,
+  #jjEmail a[href^="javascript:"]:after,
+  #jjEmail a[href^="#"]:after {
+    content: "";
+  }
+  #jjEmail pre,
+  #jjEmail blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  #jjEmail thead {
+    display: table-header-group;
+  }
+  #jjEmail tr,
+  #jjEmail img {
+    page-break-inside: avoid;
+  }
+  #jjEmail img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  #jjEmail p,
+  #jjEmail h2,
+  #jjEmail h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  #jjEmail h2,
+  #jjEmail h3 {
+    page-break-after: avoid;
+  }
+}
+#jjEmail .clearfix {
+  *zoom: 1;
+}
+#jjEmail .clearfix:before,
+#jjEmail .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#jjEmail .clearfix:after {
+  clear: both;
+}
+#jjEmail .hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+#jjEmail .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#jjEmail form {
+  margin: 0 0 20px;
+}
+#jjEmail fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#jjEmail legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#jjEmail legend small {
+  font-size: 15px;
+  color: #999999;
+}
+#jjEmail label,
+#jjEmail input,
+#jjEmail button,
+#jjEmail select,
+#jjEmail textarea {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#jjEmail input,
+#jjEmail button,
+#jjEmail select,
+#jjEmail textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#jjEmail label {
+  display: block;
+  margin-bottom: 5px;
+}
+#jjEmail select,
+#jjEmail textarea,
+#jjEmail input[type="text"],
+#jjEmail input[type="password"],
+#jjEmail input[type="datetime"],
+#jjEmail input[type="datetime-local"],
+#jjEmail input[type="date"],
+#jjEmail input[type="month"],
+#jjEmail input[type="time"],
+#jjEmail input[type="week"],
+#jjEmail input[type="number"],
+#jjEmail input[type="email"],
+#jjEmail input[type="url"],
+#jjEmail input[type="search"],
+#jjEmail input[type="tel"],
+#jjEmail input[type="color"],
+#jjEmail .uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+#jjEmail input,
+#jjEmail textarea,
+#jjEmail .uneditable-input {
+  width: 206px;
+}
+#jjEmail textarea {
+  height: auto;
+}
+#jjEmail textarea,
+#jjEmail input[type="text"],
+#jjEmail input[type="password"],
+#jjEmail input[type="datetime"],
+#jjEmail input[type="datetime-local"],
+#jjEmail input[type="date"],
+#jjEmail input[type="month"],
+#jjEmail input[type="time"],
+#jjEmail input[type="week"],
+#jjEmail input[type="number"],
+#jjEmail input[type="email"],
+#jjEmail input[type="url"],
+#jjEmail input[type="search"],
+#jjEmail input[type="tel"],
+#jjEmail input[type="color"],
+#jjEmail .uneditable-input {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+#jjEmail textarea:focus,
+#jjEmail input[type="text"]:focus,
+#jjEmail input[type="password"]:focus,
+#jjEmail input[type="datetime"]:focus,
+#jjEmail input[type="datetime-local"]:focus,
+#jjEmail input[type="date"]:focus,
+#jjEmail input[type="month"]:focus,
+#jjEmail input[type="time"]:focus,
+#jjEmail input[type="week"]:focus,
+#jjEmail input[type="number"]:focus,
+#jjEmail input[type="email"]:focus,
+#jjEmail input[type="url"]:focus,
+#jjEmail input[type="search"]:focus,
+#jjEmail input[type="tel"]:focus,
+#jjEmail input[type="color"]:focus,
+#jjEmail .uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+#jjEmail input[type="radio"],
+#jjEmail input[type="checkbox"] {
+  margin: 4px 0 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  margin-top: 1px \9;
+  /* IE8-9 */
+
+  line-height: normal;
+}
+#jjEmail input[type="file"],
+#jjEmail input[type="image"],
+#jjEmail input[type="submit"],
+#jjEmail input[type="reset"],
+#jjEmail input[type="button"],
+#jjEmail input[type="radio"],
+#jjEmail input[type="checkbox"] {
+  width: auto;
+}
+#jjEmail select,
+#jjEmail input[type="file"] {
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+
+  line-height: 30px;
+}
+#jjEmail select {
+  width: 220px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+#jjEmail select[multiple],
+#jjEmail select[size] {
+  height: auto;
+}
+#jjEmail select:focus,
+#jjEmail input[type="file"]:focus,
+#jjEmail input[type="radio"]:focus,
+#jjEmail input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#jjEmail .uneditable-input,
+#jjEmail .uneditable-textarea {
+  color: #999999;
+  background-color: #fcfcfc;
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  cursor: not-allowed;
+}
+#jjEmail .uneditable-input {
+  overflow: hidden;
+  white-space: nowrap;
+}
+#jjEmail .uneditable-textarea {
+  width: auto;
+  height: auto;
+}
+#jjEmail input:-moz-placeholder,
+#jjEmail textarea:-moz-placeholder {
+  color: #999999;
+}
+#jjEmail input:-ms-input-placeholder,
+#jjEmail textarea:-ms-input-placeholder {
+  color: #999999;
+}
+#jjEmail input::-webkit-input-placeholder,
+#jjEmail textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+#jjEmail .radio,
+#jjEmail .checkbox {
+  min-height: 20px;
+  padding-left: 20px;
+}
+#jjEmail .radio input[type="radio"],
+#jjEmail .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+#jjEmail .controls > .radio:first-child,
+#jjEmail .controls > .checkbox:first-child {
+  padding-top: 5px;
+}
+#jjEmail .radio.inline,
+#jjEmail .checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+#jjEmail .radio.inline + .radio.inline,
+#jjEmail .checkbox.inline + .checkbox.inline {
+  margin-left: 10px;
+}
+#jjEmail .input-mini {
+  width: 60px;
+}
+#jjEmail .input-small {
+  width: 90px;
+}
+#jjEmail .input-medium {
+  width: 150px;
+}
+#jjEmail .input-large {
+  width: 210px;
+}
+#jjEmail .input-xlarge {
+  width: 270px;
+}
+#jjEmail .input-xxlarge {
+  width: 530px;
+}
+#jjEmail input[class*="span"],
+#jjEmail select[class*="span"],
+#jjEmail textarea[class*="span"],
+#jjEmail .uneditable-input[class*="span"],
+#jjEmail .row-fluid input[class*="span"],
+#jjEmail .row-fluid select[class*="span"],
+#jjEmail .row-fluid textarea[class*="span"],
+#jjEmail .row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: 0;
+}
+#jjEmail .input-append input[class*="span"],
+#jjEmail .input-append .uneditable-input[class*="span"],
+#jjEmail .input-prepend input[class*="span"],
+#jjEmail .input-prepend .uneditable-input[class*="span"],
+#jjEmail .row-fluid input[class*="span"],
+#jjEmail .row-fluid select[class*="span"],
+#jjEmail .row-fluid textarea[class*="span"],
+#jjEmail .row-fluid .uneditable-input[class*="span"],
+#jjEmail .row-fluid .input-prepend [class*="span"],
+#jjEmail .row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+#jjEmail input,
+#jjEmail textarea,
+#jjEmail .uneditable-input {
+  margin-left: 0;
+}
+#jjEmail .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 20px;
+}
+#jjEmail input.span12,
+#jjEmail textarea.span12,
+#jjEmail .uneditable-input.span12 {
+  width: 926px;
+}
+#jjEmail input.span11,
+#jjEmail textarea.span11,
+#jjEmail .uneditable-input.span11 {
+  width: 846px;
+}
+#jjEmail input.span10,
+#jjEmail textarea.span10,
+#jjEmail .uneditable-input.span10 {
+  width: 766px;
+}
+#jjEmail input.span9,
+#jjEmail textarea.span9,
+#jjEmail .uneditable-input.span9 {
+  width: 686px;
+}
+#jjEmail input.span8,
+#jjEmail textarea.span8,
+#jjEmail .uneditable-input.span8 {
+  width: 606px;
+}
+#jjEmail input.span7,
+#jjEmail textarea.span7,
+#jjEmail .uneditable-input.span7 {
+  width: 526px;
+}
+#jjEmail input.span6,
+#jjEmail textarea.span6,
+#jjEmail .uneditable-input.span6 {
+  width: 446px;
+}
+#jjEmail input.span5,
+#jjEmail textarea.span5,
+#jjEmail .uneditable-input.span5 {
+  width: 366px;
+}
+#jjEmail input.span4,
+#jjEmail textarea.span4,
+#jjEmail .uneditable-input.span4 {
+  width: 286px;
+}
+#jjEmail input.span3,
+#jjEmail textarea.span3,
+#jjEmail .uneditable-input.span3 {
+  width: 206px;
+}
+#jjEmail input.span2,
+#jjEmail textarea.span2,
+#jjEmail .uneditable-input.span2 {
+  width: 126px;
+}
+#jjEmail input.span1,
+#jjEmail textarea.span1,
+#jjEmail .uneditable-input.span1 {
+  width: 46px;
+}
+#jjEmail .controls-row {
+  *zoom: 1;
+}
+#jjEmail .controls-row:before,
+#jjEmail .controls-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#jjEmail .controls-row:after {
+  clear: both;
+}
+#jjEmail .controls-row [class*="span"],
+#jjEmail .row-fluid .controls-row [class*="span"] {
+  float: left;
+}
+#jjEmail .controls-row .checkbox[class*="span"],
+#jjEmail .controls-row .radio[class*="span"] {
+  padding-top: 5px;
+}
+#jjEmail input[disabled],
+#jjEmail select[disabled],
+#jjEmail textarea[disabled],
+#jjEmail input[readonly],
+#jjEmail select[readonly],
+#jjEmail textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+#jjEmail input[type="radio"][disabled],
+#jjEmail input[type="checkbox"][disabled],
+#jjEmail input[type="radio"][readonly],
+#jjEmail input[type="checkbox"][readonly] {
+  background-color: transparent;
+}
+#jjEmail .control-group.warning .control-label,
+#jjEmail .control-group.warning .help-block,
+#jjEmail .control-group.warning .help-inline {
+  color: #c09853;
+}
+#jjEmail .control-group.warning .checkbox,
+#jjEmail .control-group.warning .radio,
+#jjEmail .control-group.warning input,
+#jjEmail .control-group.warning select,
+#jjEmail .control-group.warning textarea {
+  color: #c09853;
+}
+#jjEmail .control-group.warning input,
+#jjEmail .control-group.warning select,
+#jjEmail .control-group.warning textarea {
+  border-color: #c09853;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#jjEmail .control-group.warning input:focus,
+#jjEmail .control-group.warning select:focus,
+#jjEmail .control-group.warning textarea:focus {
+  border-color: #a47e3c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+}
+#jjEmail .control-group.warning .input-prepend .add-on,
+#jjEmail .control-group.warning .input-append .add-on {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #c09853;
+}
+#jjEmail .control-group.error .control-label,
+#jjEmail .control-group.error .help-block,
+#jjEmail .control-group.error .help-inline {
+  color: #b94a48;
+}
+#jjEmail .control-group.error .checkbox,
+#jjEmail .control-group.error .radio,
+#jjEmail .control-group.error input,
+#jjEmail .control-group.error select,
+#jjEmail .control-group.error textarea {
+  color: #b94a48;
+}
+#jjEmail .control-group.error input,
+#jjEmail .control-group.error select,
+#jjEmail .control-group.error textarea {
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#jjEmail .control-group.error input:focus,
+#jjEmail .control-group.error select:focus,
+#jjEmail .control-group.error textarea:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+#jjEmail .control-group.error .input-prepend .add-on,
+#jjEmail .control-group.error .input-append .add-on {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
+#jjEmail .control-group.success .control-label,
+#jjEmail .control-group.success .help-block,
+#jjEmail .control-group.success .help-inline {
+  color: #468847;
+}
+#jjEmail .control-group.success .checkbox,
+#jjEmail .control-group.success .radio,
+#jjEmail .control-group.success input,
+#jjEmail .control-group.success select,
+#jjEmail .control-group.success textarea {
+  color: #468847;
+}
+#jjEmail .control-group.success input,
+#jjEmail .control-group.success select,
+#jjEmail .control-group.success textarea {
+  border-color: #468847;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#jjEmail .control-group.success input:focus,
+#jjEmail .control-group.success select:focus,
+#jjEmail .control-group.success textarea:focus {
+  border-color: #356635;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+#jjEmail .control-group.success .input-prepend .add-on,
+#jjEmail .control-group.success .input-append .add-on {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #468847;
+}
+#jjEmail .control-group.info .control-label,
+#jjEmail .control-group.info .help-block,
+#jjEmail .control-group.info .help-inline {
+  color: #3a87ad;
+}
+#jjEmail .control-group.info .checkbox,
+#jjEmail .control-group.info .radio,
+#jjEmail .control-group.info input,
+#jjEmail .control-group.info select,
+#jjEmail .control-group.info textarea {
+  color: #3a87ad;
+}
+#jjEmail .control-group.info input,
+#jjEmail .control-group.info select,
+#jjEmail .control-group.info textarea {
+  border-color: #3a87ad;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#jjEmail .control-group.info input:focus,
+#jjEmail .control-group.info select:focus,
+#jjEmail .control-group.info textarea:focus {
+  border-color: #2d6987;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+}
+#jjEmail .control-group.info .input-prepend .add-on,
+#jjEmail .control-group.info .input-append .add-on {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #3a87ad;
+}
+#jjEmail input:focus:invalid,
+#jjEmail textarea:focus:invalid,
+#jjEmail select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+#jjEmail input:focus:invalid:focus,
+#jjEmail textarea:focus:invalid:focus,
+#jjEmail select:focus:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+#jjEmail .form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  *zoom: 1;
+}
+#jjEmail .form-actions:before,
+#jjEmail .form-actions:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#jjEmail .form-actions:after {
+  clear: both;
+}
+#jjEmail .help-block,
+#jjEmail .help-inline {
+  color: #595959;
+}
+#jjEmail .help-block {
+  display: block;
+  margin-bottom: 10px;
+}
+#jjEmail .help-inline {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+#jjEmail .input-append,
+#jjEmail .input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  font-size: 0;
+  white-space: nowrap;
+}
+#jjEmail .input-append input,
+#jjEmail .input-prepend input,
+#jjEmail .input-append select,
+#jjEmail .input-prepend select,
+#jjEmail .input-append .uneditable-input,
+#jjEmail .input-prepend .uneditable-input,
+#jjEmail .input-append .dropdown-menu,
+#jjEmail .input-prepend .dropdown-menu,
+#jjEmail .input-append .popover,
+#jjEmail .input-prepend .popover {
+  font-size: 14px;
+}
+#jjEmail .input-append input,
+#jjEmail .input-prepend input,
+#jjEmail .input-append select,
+#jjEmail .input-prepend select,
+#jjEmail .input-append .uneditable-input,
+#jjEmail .input-prepend .uneditable-input {
+  position: relative;
+  margin-bottom: 0;
+  *margin-left: 0;
+  vertical-align: top;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+#jjEmail .input-append input:focus,
+#jjEmail .input-prepend input:focus,
+#jjEmail .input-append select:focus,
+#jjEmail .input-prepend select:focus,
+#jjEmail .input-append .uneditable-input:focus,
+#jjEmail .input-prepend .uneditable-input:focus {
+  z-index: 2;
+}
+#jjEmail .input-append .add-on,
+#jjEmail .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+}
+#jjEmail .input-append .add-on,
+#jjEmail .input-prepend .add-on,
+#jjEmail .input-append .btn,
+#jjEmail .input-prepend .btn,
+#jjEmail .input-append .btn-group > .dropdown-toggle,
+#jjEmail .input-prepend .btn-group > .dropdown-toggle {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#jjEmail .input-append .active,
+#jjEmail .input-prepend .active {
+  background-color: #a9dba9;
+  border-color: #46a546;
+}
+#jjEmail .input-prepend .add-on,
+#jjEmail .input-prepend .btn {
+  margin-right: -1px;
+}
+#jjEmail .input-prepend .add-on:first-child,
+#jjEmail .input-prepend .btn:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+#jjEmail .input-append input,
+#jjEmail .input-append select,
+#jjEmail .input-append .uneditable-input {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+#jjEmail .input-append input + .btn-group .btn:last-child,
+#jjEmail .input-append select + .btn-group .btn:last-child,
+#jjEmail .input-append .uneditable-input + .btn-group .btn:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+#jjEmail .input-append .add-on,
+#jjEmail .input-append .btn,
+#jjEmail .input-append .btn-group {
+  margin-left: -1px;
+}
+#jjEmail .input-append .add-on:last-child,
+#jjEmail .input-append .btn:last-child,
+#jjEmail .input-append .btn-group:last-child > .dropdown-toggle {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+#jjEmail .input-prepend.input-append input,
+#jjEmail .input-prepend.input-append select,
+#jjEmail .input-prepend.input-append .uneditable-input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#jjEmail .input-prepend.input-append input + .btn-group .btn,
+#jjEmail .input-prepend.input-append select + .btn-group .btn,
+#jjEmail .input-prepend.input-append .uneditable-input + .btn-group .btn {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+#jjEmail .input-prepend.input-append .add-on:first-child,
+#jjEmail .input-prepend.input-append .btn:first-child {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+#jjEmail .input-prepend.input-append .add-on:last-child,
+#jjEmail .input-prepend.input-append .btn:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+#jjEmail .input-prepend.input-append .btn-group:first-child {
+  margin-left: 0;
+}
+#jjEmail input.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+#jjEmail .form-search .input-append .search-query,
+#jjEmail .form-search .input-prepend .search-query {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#jjEmail .form-search .input-append .search-query {
+  -webkit-border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  border-radius: 14px 0 0 14px;
+}
+#jjEmail .form-search .input-append .btn {
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
+}
+#jjEmail .form-search .input-prepend .search-query {
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
+}
+#jjEmail .form-search .input-prepend .btn {
+  -webkit-border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  border-radius: 14px 0 0 14px;
+}
+#jjEmail .form-search input,
+#jjEmail .form-inline input,
+#jjEmail .form-horizontal input,
+#jjEmail .form-search textarea,
+#jjEmail .form-inline textarea,
+#jjEmail .form-horizontal textarea,
+#jjEmail .form-search select,
+#jjEmail .form-inline select,
+#jjEmail .form-horizontal select,
+#jjEmail .form-search .help-inline,
+#jjEmail .form-inline .help-inline,
+#jjEmail .form-horizontal .help-inline,
+#jjEmail .form-search .uneditable-input,
+#jjEmail .form-inline .uneditable-input,
+#jjEmail .form-horizontal .uneditable-input,
+#jjEmail .form-search .input-prepend,
+#jjEmail .form-inline .input-prepend,
+#jjEmail .form-horizontal .input-prepend,
+#jjEmail .form-search .input-append,
+#jjEmail .form-inline .input-append,
+#jjEmail .form-horizontal .input-append {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+#jjEmail .form-search .hide,
+#jjEmail .form-inline .hide,
+#jjEmail .form-horizontal .hide {
+  display: none;
+}
+#jjEmail .form-search label,
+#jjEmail .form-inline label,
+#jjEmail .form-search .btn-group,
+#jjEmail .form-inline .btn-group {
+  display: inline-block;
+}
+#jjEmail .form-search .input-append,
+#jjEmail .form-inline .input-append,
+#jjEmail .form-search .input-prepend,
+#jjEmail .form-inline .input-prepend {
+  margin-bottom: 0;
+}
+#jjEmail .form-search .radio,
+#jjEmail .form-search .checkbox,
+#jjEmail .form-inline .radio,
+#jjEmail .form-inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+#jjEmail .form-search .radio input[type="radio"],
+#jjEmail .form-search .checkbox input[type="checkbox"],
+#jjEmail .form-inline .radio input[type="radio"],
+#jjEmail .form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+#jjEmail .control-group {
+  margin-bottom: 10px;
+}
+#jjEmail legend + .control-group {
+  margin-top: 20px;
+  -webkit-margin-top-collapse: separate;
+}
+#jjEmail .form-horizontal .control-group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+#jjEmail .form-horizontal .control-group:before,
+#jjEmail .form-horizontal .control-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#jjEmail .form-horizontal .control-group:after {
+  clear: both;
+}
+#jjEmail .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+#jjEmail .form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 180px;
+  *margin-left: 0;
+}
+#jjEmail .form-horizontal .controls:first-child {
+  *padding-left: 180px;
+}
+#jjEmail .form-horizontal .help-block {
+  margin-bottom: 0;
+}
+#jjEmail .form-horizontal input + .help-block,
+#jjEmail .form-horizontal select + .help-block,
+#jjEmail .form-horizontal textarea + .help-block,
+#jjEmail .form-horizontal .uneditable-input + .help-block,
+#jjEmail .form-horizontal .input-prepend + .help-block,
+#jjEmail .form-horizontal .input-append + .help-block {
+  margin-top: 10px;
+}
+#jjEmail .form-horizontal .form-actions {
+  padding-left: 180px;
+}
+#jjEmail .btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+#jjEmail .btn:hover,
+#jjEmail .btn:focus,
+#jjEmail .btn:active,
+#jjEmail .btn.active,
+#jjEmail .btn.disabled,
+#jjEmail .btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+#jjEmail .btn:active,
+#jjEmail .btn.active {
+  background-color: #cccccc \9;
+}
+#jjEmail .btn:first-child {
+  *margin-left: 0;
+}
+#jjEmail .btn:hover,
+#jjEmail .btn:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#jjEmail .btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#jjEmail .btn.active,
+#jjEmail .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+#jjEmail .btn.disabled,
+#jjEmail .btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#jjEmail .btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+#jjEmail .btn-large [class^="icon-"],
+#jjEmail .btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+#jjEmail .btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#jjEmail .btn-small [class^="icon-"],
+#jjEmail .btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+#jjEmail .btn-mini [class^="icon-"],
+#jjEmail .btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+#jjEmail .btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#jjEmail .btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#jjEmail .btn-block + .btn-block {
+  margin-top: 5px;
+}
+#jjEmail input[type="submit"].btn-block,
+#jjEmail input[type="reset"].btn-block,
+#jjEmail input[type="button"].btn-block {
+  width: 100%;
+}
+#jjEmail .btn-primary.active,
+#jjEmail .btn-warning.active,
+#jjEmail .btn-danger.active,
+#jjEmail .btn-success.active,
+#jjEmail .btn-info.active,
+#jjEmail .btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+#jjEmail .btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-primary:hover,
+#jjEmail .btn-primary:focus,
+#jjEmail .btn-primary:active,
+#jjEmail .btn-primary.active,
+#jjEmail .btn-primary.disabled,
+#jjEmail .btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+#jjEmail .btn-primary:active,
+#jjEmail .btn-primary.active {
+  background-color: #003399 \9;
+}
+#jjEmail .btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-warning:hover,
+#jjEmail .btn-warning:focus,
+#jjEmail .btn-warning:active,
+#jjEmail .btn-warning.active,
+#jjEmail .btn-warning.disabled,
+#jjEmail .btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+#jjEmail .btn-warning:active,
+#jjEmail .btn-warning.active {
+  background-color: #c67605 \9;
+}
+#jjEmail .btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-danger:hover,
+#jjEmail .btn-danger:focus,
+#jjEmail .btn-danger:active,
+#jjEmail .btn-danger.active,
+#jjEmail .btn-danger.disabled,
+#jjEmail .btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+#jjEmail .btn-danger:active,
+#jjEmail .btn-danger.active {
+  background-color: #942a25 \9;
+}
+#jjEmail .btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-success:hover,
+#jjEmail .btn-success:focus,
+#jjEmail .btn-success:active,
+#jjEmail .btn-success.active,
+#jjEmail .btn-success.disabled,
+#jjEmail .btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+#jjEmail .btn-success:active,
+#jjEmail .btn-success.active {
+  background-color: #408140 \9;
+}
+#jjEmail .btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-info:hover,
+#jjEmail .btn-info:focus,
+#jjEmail .btn-info:active,
+#jjEmail .btn-info.active,
+#jjEmail .btn-info.disabled,
+#jjEmail .btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+#jjEmail .btn-info:active,
+#jjEmail .btn-info.active {
+  background-color: #24748c \9;
+}
+#jjEmail .btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#jjEmail .btn-inverse:hover,
+#jjEmail .btn-inverse:focus,
+#jjEmail .btn-inverse:active,
+#jjEmail .btn-inverse.active,
+#jjEmail .btn-inverse.disabled,
+#jjEmail .btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+#jjEmail .btn-inverse:active,
+#jjEmail .btn-inverse.active {
+  background-color: #080808 \9;
+}
+#jjEmail button.btn,
+#jjEmail input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+#jjEmail button.btn::-moz-focus-inner,
+#jjEmail input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+#jjEmail button.btn.btn-large,
+#jjEmail input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+#jjEmail button.btn.btn-small,
+#jjEmail input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+#jjEmail button.btn.btn-mini,
+#jjEmail input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+#jjEmail .btn-link,
+#jjEmail .btn-link:active,
+#jjEmail .btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#jjEmail .btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #0088cc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#jjEmail .btn-link:hover,
+#jjEmail .btn-link:focus {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent;
+}
+#jjEmail .btn-link[disabled]:hover,
+#jjEmail .btn-link[disabled]:focus {
+  color: #333333;
+  text-decoration: none;
+}
+#jjEmail .field {
+  padding: 10px 0px;
+}
+#jjEmail .field .jjemail-bold {
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+#jjEmail .field label {
+  float: left;
+  clear: left;
+  width: 75px;
+  text-align: left;
+}
+#jjEmail .field .submit {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+#jjEmail .field .submit:hover,
+#jjEmail .field .submit:focus,
+#jjEmail .field .submit:active,
+#jjEmail .field .submit.active,
+#jjEmail .field .submit.disabled,
+#jjEmail .field .submit[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+#jjEmail .field .submit:active,
+#jjEmail .field .submit.active {
+  background-color: #cccccc \9;
+}
+#jjEmail .field .submit:first-child {
+  *margin-left: 0;
+}
+#jjEmail .field .submit:hover,
+#jjEmail .field .submit:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#jjEmail .field .submit:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#jjEmail .field .submit.active,
+#jjEmail .field .submit:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+#jjEmail .field .submit.disabled,
+#jjEmail .field .submit[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

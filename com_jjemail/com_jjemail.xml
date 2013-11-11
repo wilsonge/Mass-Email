@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>JJ Email</name>
+	<author>JoomJunk</author>
+	<creationDate>20th Jan 2013</creationDate>
+	<copyright>Copyright (C) 2013 JoomJunk</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@joomjunk.co.uk</authorEmail>
+	<authorUrl>http://www.joomjunk.co.uk</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<!-- Runs on install/uninstall/update -->
+	<scriptfile>script.php</scriptfile>
+	
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>jjemail.php</filename>
+		<filename>metadata.xml</filename>
+		<folder>models</folder>
+		<folder>controllers</folder>
+		<folder>views</folder>
+	</files>
+	
+	<media folder="site/media" destination="com_jjemail">
+		<folder>css</folder>
+        <folder>images</folder>
+	</media>
+	
+	<languages folder="site/language/en-GB">
+		<language tag="en-GB">en-GB.com_jjemail.ini</language>
+	</languages>
+
+	<administration>
+		<menu img="components/com_jjblog/assets/images/cpanel_16.png">COM_JJEMAIL</menu>
+		<files folder="admin">
+			<!-- Admin Main Files -->
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>jjemail.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+				<language tag="en-GB">language/en-GB/en-GB.com_jjemail.ini</language>
+				<language tag="en-GB">language/en-GB/en-GB.com_jjemail.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

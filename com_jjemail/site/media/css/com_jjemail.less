@@ -1,0 +1,29 @@
+#jjEmail {
+  @import "reset.less";
+  @import "variables.less";
+  @import "mixins.less";
+  @import "forms.less";
+  @import "buttons.less";
+
+  .field {
+    padding: 10px 0px;
+
+    .jjemail-bold {
+      font-weight: bold;
+      line-height: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    label {
+      float: left;
+      clear: left;
+      width: 75px;
+      text-align: left;
+    }
+
+    .submit {
+      .btn();
+    }
+  }
+}
