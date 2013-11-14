@@ -40,6 +40,7 @@ JHtml::stylesheet('com_jjemail/com_jjemail.css', array(), true);
 			<div class="field">
 				<label for="jjEmail-attach"><?php echo JText::_('COM_JJEMAIL_ATTACHMENTS_FIELD_LABEL'); ?></label>
 				<input type="file" name="attach[]" id="jjEmail-attach"/>
+				<p class="small"><?php echo JText::sprintf('COM_JJEMAIL_ALLOWED_TYPES_ARE', $this->fileSizeAllowed, $this->fileTypesAllowed); ?></p>
 			</div>
 
 			<div class="field">
