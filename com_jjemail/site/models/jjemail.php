@@ -153,8 +153,7 @@ class JjemailModeljjemail extends JModelLegacy
 		// Create a new query object.
 		$query = $db->getQuery(true)
 			->select('*')
-			->from('#__users')
-			->where('enabled = 1');
+			->from('#__users');
 
 		// Reset the query using our newly populated query object.
 		$db->setQuery($query);
